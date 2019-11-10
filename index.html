@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- BATAS ATAS KELENGKAPAN -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta charset="UTF-8">
+       <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+       
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+	   <link rel="stylesheet" href="css/form-elements.css">
+        <!-- BATAS BAWAH KELENGKAPAN -->
+        
+        <title>SMK Negeri 1 Mepanga</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 jumbotron">
+                    <div class="form-top">
+                        <div class="row">
+                            <div class="form-top-left">
+                                <h1 class="text-success">Login Success</h1>
+                                <p class="text-info">Jaringan Internet dan Intranet SMK Negeri 1 Mepanga</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PORTAL LINK INTERNAL -->
+            <div class="row">
+                <h2 class="bg-info" align="center">Link Internal</h2>
+                <p class="text-info">Silahkan klik link di bawah ini untuk masuk ke salah satu sistem informasi sekolah:</p>
+                 <div class="row">
+                    <div class="col-md-2" align="center"><br>
+                        <a href="http://jibas.smk.sch.id" class="btn btn-danger btn-block" role="button">JIBAS</a>
+                        <small class="text-danger">Sisem Informasi: Akademik, Absensi, Perpustakaan, Keuangan, dll.</small><br>
+                    </div>
+                       <div class="col-md-2" align="center"><br>
+                        <a href="http://jibas.smk.sch.id/jibas/anjungan" class="btn btn-warning btn-block" role="button">Anjungan</a>
+                        <small class="text-warning">Mading Sekolah, Pengumuman Sekolah untuk siswa dan guru</small><br>
+                    </div>
+                     <div class="col-md-2" align="center"><br>
+                         <a href="http://tkj.smk.sch.id" class="btn btn-primary btn-block" role="button">Portal TKJ</a>
+                         <small class="text-primary">Download file images (*.iso), Aplikasi (*.exe,*.msi), Folder(*.rar), dll.</small>
+                     </div>
+                      <div class="col-md-2" align="center"><br>
+                         <a href="#" class="btn btn-success btn-block disabled" role="button">Portal AKT</a>
+                         <small class="text-success">(sedang dikembangkan)</small>
+                     </div>
+                      <div class="col-md-2" align="center"><br>
+                         <a href="#" class="btn btn-info btn-block disabled" role="button">Portal ATPH</a>
+                         <small class="text-info">(sedang dikembangkan)</small>
+                     </div>
+                     <div class="col-md-2" align="center"><br>
+                         <a href="#" class="btn btn-danger btn-block disabled" role="button">Portal APAT</a>
+                         <small class="text-danger">(sedang dikembangkan)</small>
+                     </div>
+                </div>
+            </div>
+            
+            
+            <!-- LINK UMUM -->
+            <div class="row" align="center"><br>
+                <h2 class="bg-danger" align="center">Link Umum</h2>
+                <p class="text-warning"></p>
+                <div class="col-md-4"><br>
+                    <a href="http://www.google.com"><img src="img/google.png" width="100"></a>
+                </div>
+                <div class="col-md-4"><br>
+                    <a href="http://www.facebook.com"><img src="img/facebook.png" width="100"></a>
+                </div>
+                <div class="col-md-4"><br>
+                    <a href="http://www.twitter.com"><img src="img/twitter.png" width="100"></a>
+                </div>
+            </div>
+            
+            <!-- FOOTER -->
+             <div class="row">
+            <div class="col-md-12">
+                <footer class="footer">
+                    <div class="form-top">
+                        <hr size="5px" color="#ff0000">
+                    <p class="text-info" align="center">@ 2017</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
